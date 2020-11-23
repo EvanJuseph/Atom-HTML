@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<title>Flex Display</title>
+	<style media="screen">
+		html,
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: calibri;
+			letter-spacing: 2px;
+			text-transform: uppercase;
+			background: #202020;
+			color: white;
+		}
+		.center{
+			justify-content: center;
+			display: flex;
+			background: grey;
+		}
+		.center > div{
+			background: blue;
+			width: 100px;
+			margin: 10px;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+		}
+		.container{
+			background: grey;
+			display: flex;
+		}
+		.container > div{
+			background: red;
+			width: 100px;
+			margin: 10px;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+		}
+		.space{
+			background: grey;
+			display: flex;
+			justify-content: space-around;
+		}
+		.space > div{
+			background: orange;
+			width: 100px;
+			margin: 10px;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+		}
+		.start{
+			background: grey;
+			display: flex;
+			justify-content: flex-start;
+		}
+		.start > div {
+			background: purple;
+			margin: 10px;
+			width: 100px;
+			text-align: center;
+			line-height: 75px;
+			font-size: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<h2>Flexible-Items</h2>
+	<div class="grup">
+		<div class="container">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<h2>the justify-content property</h2>
+		<p>justify-content = center</p>
+		<div class="center">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+		</div>
+		<p>justify-content =  space-around</p>
+		<div class="space">
+			<div>1</div>
+			<div>2</div>
+			<div>3</div>
+	</div>
+	<p>justify-content = flex-start</p>
+	<div class="start">
+		<div>1</div>
+		<div>2</div>
+		<div>3</div>
+</div>
+</body>
+
+</html>

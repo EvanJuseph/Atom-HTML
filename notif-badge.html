@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Notification-Badge</title>
+    <style media="screen">
+      *{
+        box-sizing: border-box;
+      }
+      html,body{
+        font-family: calibri;
+      }
+      .notif{
+        background: #555;
+        color: white;
+        padding: 10px 20px;
+        position: relative;
+        border-radius: 2px;
+        text-decoration: none;
+        transition: 0.25s;
+      }
+      .notif:hover{
+        background: red;
+      }
+      .notif .badge{
+        background: red;
+        border-radius: 50%;
+        padding: 5px 10px;
+        position: absolute;
+        top: -10px;
+        right: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Notification-Badge</h1>
+    <a href="#" class="notif">
+      <span>Call</span>
+      <span class="badge">3</span>
+    </a>
+  </body>
+</html>

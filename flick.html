@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Flicker Animation</title>
+    <style media="screen">
+      html, body{
+        font-family: arial;
+        padding: 0;
+      }
+      div{
+        margin: 0 auto;
+        background: red;
+        border:1px solid red;
+        padding: 1px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50px 50px;
+        box-shadow: 2px 5px 2px grey;
+      }
+      h1{
+        text-align: center;
+        padding: 10px;
+        width: 100px;
+        color: red;
+        margin: 0 auto;
+      }
+      @keyframes flicker{
+        0%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+      #red{
+        animation: flicker 1s ease alternate infinite;
+      }
+      #evan{
+        animation: flicker 1s ease alternate infinite;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+    <div id="red"></div>
+    <h1 id="evan">STOP!</h1>
+  </center>
+  </body>
+</html>

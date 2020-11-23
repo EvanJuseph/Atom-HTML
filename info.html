@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>INFO</title>
+    <style media="screen">
+      *{
+        margin: 0;
+        padding: 0;
+        font-family: calibri;
+      }
+      html,body{
+        cursor: pointer;
+        display: grid;
+        height: 100%;
+        text-align: center;
+        place-items: center;
+        background: #f2f2f2;
+      }
+      .satu{
+        position: relative;
+        height: 200px;
+        width: 400px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0px 15px 8px 0px rgba(0,0,0,0.3);
+        transition: 0.2s ease-out;
+      }
+      .satu .image{
+        background: #000;
+        position: absolute;
+        top: 0px;
+        left: 0px
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+        transition: transform 0.2s ease-out;
+      }
+      .satu:hover .image{
+        transform: translate(-300px);
+      }
+      .image img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: opacity 0.2s ease-out;
+      }
+      .satu:hover .image img{
+        opacity: 0.7;
+      }
+      .satu .dua{
+        position: relative;
+        height: 100%;
+        width: 100%;
+      }
+      h3 {
+        text-align: center;
+        color: darkgrey;
+        line-height: 40px;
+        font-size: 27px;
+        margin: 3px 0;
+      }
+      span{
+        padding: 2px;
+        padding-left: 5px;
+        padding-right: 5px;
+        color: darkgrey;
+        border: 2px solid darkorange;
+        border-radius: 10px;
+        transition: 0.2s ease-out;
+      }
+      span:hover{
+        background:darkorange;
+        color: white;
+        cursor: pointer;
+      }
+      img{
+        box-shadow: 0px 0px 12px 0px black;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="satu">
+      <div class="image">
+        <img src="image/coding.jpg" alt="no internet!">
+      </div><br><br><br>
+      <h3>EVAN</h3>
+      <span>DEVELOPER</span>
+    </div>
+  </body>
+</html>
